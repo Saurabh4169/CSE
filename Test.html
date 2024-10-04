@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .parents{
+            border: 2px solid red;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            /*justify-content: space-around; */
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: space-between;
+            align-content: flex-start;
+        }
+        .Box{
+
+            border: 2px solid green;
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            
+
+        }
+        #Box-1{
+            flex-grow: 1;
+
+        }
+        #Box-2{
+            
+            flex-shrink: 2;
+            align-self: flex-start;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="parents">
+        <div class="Box" id="Box-1">Box-1</div>
+        <div class="Box" id="Box-2">Box-2</div>
+        <div class="Box" id="Box-3">Box-3</div>
+        <div class="Box" id="Box-4">Box-4</div>
+       
+    </div>
+</body>
+</html>
